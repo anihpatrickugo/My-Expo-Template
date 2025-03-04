@@ -104,7 +104,7 @@ const Button: React.FC<ButtonProps> = ({
   const textStyle: TextStyle = {};
 
   const blockStyle: ViewStyle = {
-    width: size === "small" ? rWidth(43.5) : size === "medium" ? rWidth(50.7) : "100%",
+    width: size === "small" ? rWidth(43.5) : size === "medium" ? rWidth(50.7) : rWidth(85),
     height: smallHeight ? rScale(40) : rScale(48),
   };
   let gradient: [string, string, ...string[]] = ["transparent", "transparent"];
