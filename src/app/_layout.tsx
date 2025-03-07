@@ -3,7 +3,6 @@ import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 import { SessionProvider } from "@/contexts/AuthContext";
-import AppSplashScreen from "@/screen/SplashScreen";
 import { Slot } from "expo-router";
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.

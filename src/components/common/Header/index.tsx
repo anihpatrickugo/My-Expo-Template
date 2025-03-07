@@ -19,11 +19,12 @@ const Header: React.FC<HeaderProps> = (props) => {
   const { colors } = useTheme();
 
   return (
-    <Box padded style={styles.header} bgColor={props.bgColor || colors.main}>
+    <Box padded style={styles.header} bgColor={props.bgColor || colors.background}>
       <Box row vAlign="middle" justify="space-between">
         <Clickable onClick={props.onBack ?? router.back}>
           <Box row vAlign="middle" width="auto">
-            <Icon name="chevron-left" />
+            {/* shoud be less than sign*/}
+            <Icon name="checkmark-circle" />
           </Box>
         </Clickable>
 

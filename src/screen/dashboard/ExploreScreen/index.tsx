@@ -7,15 +7,16 @@ export default function ExploreScreen() {
   const { color } = useTheme();
   return (
     <>
-    <UI.Header title="Explore Screen"/>
+      <UI.Header title="Explore Screen" />
       <UI.Layout style={styles.container}>
         <UI.Text>Explore Screen</UI.Text>
-        <UI.TextInput containerStyle={styles.textContainnner} />
-        <UI.Spacer size={rHeight(2)} />
+        <UI.TextInput containerStyle={styles.textContainner} />
+        <UI.Spacer size={rHeight(1)} />
+        <UI.TextInput containerStyle={styles.textContainner} />
         <UI.Box boxed padded>
           <UI.Button text="submit" />
-          <UI.Icon name="eye" color="black" size={24}/>
         </UI.Box>
+        <UI.Icon name="eye" color="black" size={24} />
       </UI.Layout>
     </>
   );
