@@ -39,8 +39,11 @@ export function SessionProvider(props: React.PropsWithChildren) {
           setStorageItemAsync("accessToken", accessToken);
           setStorageItemAsync("refreshToken", refreshToken ?? "");
         },
+
         signOut: () => {
           setSession(null);
+          setStorageItemAsync("accessToken", null);
+          setStorageItemAsync("refreshToken", null);
         },
         session,
         isLoading,

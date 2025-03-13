@@ -9,6 +9,8 @@ import { rHeight } from "@/src/utils";
 let loginSchema = yup.object().shape({
   email: yup.string().email().required("Email is required"),
   password: yup.string().required("Password is required"),
+
+  // you can use the validator package from npm to create custom validators
 });
 
 export default function LoginScreen() {
