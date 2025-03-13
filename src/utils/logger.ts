@@ -1,11 +1,11 @@
 import * as device from "expo-device";
-import { APP_VARIANT } from "~/constants";
+import { APP_VARIANT } from "@/constants";
 
 type ENV = "development" | "production" | "staging";
 
 class Logger {
   private env: ENV = APP_VARIANT as ENV;
-s
+
   log(message?: any, ...data: any[]) {
     switch (this.env) {
       case "development":

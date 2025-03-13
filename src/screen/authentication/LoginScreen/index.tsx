@@ -16,9 +16,9 @@ export default function LoginScreen() {
 
   const handleLogin = (values: any) => {
     console.log(values);
-    //Adicione sua lógica de login aqui
-    signIn();
-    //Antes de navegar, tenha certeza de que o usuário está autenticado
+    // pass in the token to the signIn function
+    signIn("accessToken", "refreshToken");
+    // navigate to the home screen
     router.replace("/");
   };
 
